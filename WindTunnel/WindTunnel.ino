@@ -69,7 +69,7 @@ void setup() {
   lcd_1.begin(16, 2);
 
   // Calcola la velocità massima dell’aria
-  maxAirSpeed = calculateMaxAirSpeed(fanCFM, ductDiameter_cm);C
+  maxAirSpeed = calculateMaxAirSpeed(fanCFM, ductDiameter_cm);
   minEffectivePWM = calculateMinEffectivePWM(minRPM, maxRPM);
 }
 
