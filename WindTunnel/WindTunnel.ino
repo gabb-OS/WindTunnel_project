@@ -105,8 +105,6 @@ void loop() {
   outputValue = (sensorValue < minPotThreshold) ? 0 : map(sensorValue, minPotThreshold, 1023, minEffectivePWM, 255);
   analogWrite(pinMosfetGate, outputValue);
 
-  analogWrite(pinMosfetGate, outputValue);
-
   int estimatedRPM = map(outputValue, 0, 255, 0, maxRPM);
   float estimatedKMH = maxAirSpeed * estimatedRPM / maxRPM;
 
